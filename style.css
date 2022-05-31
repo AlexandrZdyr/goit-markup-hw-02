@@ -1,8 +1,16 @@
+:root {
+    --head-color: #212121;
+    --button-color: #2196F3;
+    --p-color: #757575;
+    --animation-color: #FFFFFF;
+}
+
+
 body {
-    background-color: #FFFFFF;
-    color: #757575;
+    color: var(--p-color);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.02em;
+    font-size: 14px;
 }
 
 ul {
@@ -12,12 +20,13 @@ ul {
 /* Logo */
 
 .logo {
-color: #2196F3;
-font-family: 'Raleway';
+color: var(--button-color);
+font-family: 'Raleway', sans-serif;
 letter-spacing: 0.03em;
 font-weight: 700;
 font-size: 26px;
 line-height: 1.19em;
+text-decoration: none;
 }
 
 .logo-head {
@@ -27,26 +36,33 @@ color: #000000;
 
 
 .page-link .link {
-    color: #212121;
+    color: var(--head-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14em;
+    text-decoration: none;
 }
 
-.page-link .link:hover , .page-link .link:focus{
-    color: #2196F3;
+.page-link .link:hover , .page-link .link:focus {
+    color: var(--button-color);
 }
+
+.page-link .link.current {
+    color: var(--button-color);
+}
+
 
 .page-mail {
-    color: #757575;
+    color: var(--p-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.12em;
+    text-decoration: none;
 }
 
 .page-mail:hover,
 .page-mail:focus {
-    color: #2196F3;
+    color: var(--button-color);
 }
 
 
@@ -59,7 +75,7 @@ background-color: #2F303A;
 }
 
 .tittle-h {
-    color: #FFFFFF;
+    color: var(--animation-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36em;
@@ -69,8 +85,8 @@ background-color: #2F303A;
 }
 
 .tittle-botton {
-color: #FFFFFF ;
-background-color: #2196F3;
+color: var(--animation-color) ;
+background-color: var(--button-color);
 font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -78,6 +94,12 @@ font-weight: 700;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
+    font-family: inherit;
+}
+
+.tittle-botton:hover, .tittle-botton:focus {
+    background-color: var(--button-color);
+    color: var(--animation-color);
 }
 
 
@@ -85,7 +107,7 @@ font-weight: 700;
 
 
 .about-list-tittle {
-    color: #212121;
+    color: var(--head-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14em;
@@ -94,7 +116,7 @@ font-weight: 700;
 }
 
 .about-list-text {
-color: #757575;
+color: var(--p-color);
 font-weight: 400;
 font-size: 14px;
 line-height: 1.71em;
@@ -105,7 +127,7 @@ line-height: 1.71em;
 
 
 .about-we {
-color: #212121;
+color: var(--head-color);
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17;
@@ -117,7 +139,7 @@ text-align: center;
 /* Team */
 
 .team-tittle {
-color: #212121;
+color: var(--head-color);
 font-weight: 700;
 font-size: 36px;
 line-height: 1.17em;
@@ -126,7 +148,7 @@ text-align: center;
 
 
 .team-list-tittle {
-color: #212121;
+color: var(--head-color);
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19em;
@@ -135,7 +157,7 @@ letter-spacing: 0.03em;
 }
 
 .team-list-text {
-    color: #212121;
+    color: var(--head-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.19em;
@@ -155,24 +177,29 @@ letter-spacing: 0.03em;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71em;
+    
 }
 
 .logo-footer {
-color: #FFFFFF;
+color: var(--animation-color);
 }
 
 .address {
-color: #FFFFFF;
+color: var(--animation-color);
+text-decoration: none;
+font-style: normal;
 }
 .address:hover {
-    color: #2196F3;
+    color: var(--button-color);
 }
 
 .mail {
 color: rgba(255, 255, 255, 0.6);
+text-decoration: none;
+font-style: normal;
 } 
 .mail:hover {
-    color: #2196F3;
+    color: var(--button-color);
 }
 
 
@@ -181,9 +208,11 @@ color: rgba(255, 255, 255, 0.6);
 
 /* portfolio */
 
-
+.filters-link {
+    text-align: center;
+}
 .filters-text {
-    color: #212121;
+    color: var(--head-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63em;
@@ -192,12 +221,12 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .filters-text:hover, .filters-text:focus {
-color: #ffffff;
-background-color: #2196F3;
+color: var(--animation-color);
+background-color: var(--button-color);
 }
 
 .filters-project-tettle {
-    color: #212121;
+    color: var(--head-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2em;
@@ -205,7 +234,7 @@ background-color: #2196F3;
 }
 
 .filters-project-text {
-color: #757575;
+color: var(--p-color);
 font-weight: 400;
 font-size: 16px;
 line-height: 1.88em;
