@@ -182,16 +182,18 @@ color: rgba(255, 255, 255, 0.6);
 /* portfolio */
 
 
-.filters-link {
+.filters-text {
     color: #212121;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63em;
     text-align: center;
+    cursor: pointer;
 }
 
-.filters-link:hover, .filters-link:focus {
-color: #2196F3;
+.filters-text:hover, .filters-text:focus {
+color: #ffffff;
+background-color: #2196F3;
 }
 
 .filters-project-tettle {
