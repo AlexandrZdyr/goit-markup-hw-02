@@ -95,9 +95,11 @@ font-weight: 700;
     text-align: center;
     letter-spacing: 0.06em;
     font-family: inherit;
+    cursor: pointer;
 }
 
-.tittle-botton:hover, .tittle-botton:focus {
+.tittle-botton:hover, 
+.tittle-botton:focus {
     background-color: var(--button-color);
     color: var(--animation-color);
 }
