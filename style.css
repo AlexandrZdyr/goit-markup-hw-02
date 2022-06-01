@@ -218,6 +218,7 @@ font-style: normal;
     line-height: 1.63em;
     text-align: center;
     cursor: pointer;
+    background-color: #F5F4FA;
 }
 
 .filters-text:hover, .filters-text:focus {
